@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="" name="description">
+		<meta content="" itemprop="image">
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="white">
+        <meta name="format-detection" content="telephone=no">
+		<title>确认订单</title>
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="package/requirejs/2.1.17/require.min.js"></script>
+	</head>
+	<body data-main="page/pay/main" >
+		<style>
+		.preloading{
+		    position: fixed;
+		    width: 100%;
+		    height: 100%;
+		    background-color: rgba(0, 0, 0, 0);
+		    z-index: 1000;
+		    top: 0;
+		    left: 0;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -ms-flexbox;
+		    display: flex;
+		    -ms-flex-align: center;
+		    -webkit-box-align: center;
+		    box-align: center;
+		    -webkit-align-items: center;
+		    align-items: center;
+		    -ms-flex-pack: center;
+		    -webkit-box-pack: center;
+		    box-pack: center;
+		    -webkit-justify-content: center;
+		    justify-content: center;
+		}
+		.preloading .inner {
+		    width: 50px;
+		    height: 50px;
+		    background-color: rgba(0, 0, 0, 0.7);
+		    border-radius: 5px;
+		    background-image: url(uploads/loading.gif);
+		    background-repeat: no-repeat;
+		    background-position: center center;
+		    background-size: 16px;
+		}
+		</style>
+		<div class="preloading"><div class="inner"></div></div>
+	</body>
+	<script type="text/javascript" src="source/dev/config.js"></script>
+</html>
